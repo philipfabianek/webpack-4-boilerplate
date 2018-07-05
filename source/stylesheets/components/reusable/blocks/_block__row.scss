@@ -1,0 +1,68 @@
+.block__row {
+    & {
+        margin-top: 3rem;
+
+        @include atSmall {
+            margin-top: 4rem;
+        }
+
+        @include atMedium {
+            margin-top: 4rem;
+        }
+    }
+
+    &--top {
+        margin-top: 0;
+    }
+
+    h2 {
+        font-family: "Lato", sans-serif;
+        font-size: 2.2rem;
+        letter-spacing: 1.5px;
+        margin: 0 auto;
+        position: relative;
+        text-align: left;
+        width: 90%;
+
+        @include atSmall {
+            font-size: 2.4rem;
+            letter-spacing: 2px;
+        }
+
+        @include atMedium {
+            font-size: 2.6rem;
+            letter-spacing: 2px;
+        }
+
+        &:before {
+            bottom: -2rem;
+            background-color: $black;
+            content: "";
+            height: .2rem;
+            left: 0;
+            position: absolute;
+            width: 2.4rem;
+
+            @include atSmall {
+                width: 3rem;
+            }
+        }
+    }
+
+    p {
+        font-family: "Lato", sans-serif;
+        font-size: 1.8rem;
+        letter-spacing: .5px;
+        line-height: 150%;
+        margin: 0 auto;
+        margin-top: 4rem;
+        text-align: left;
+        width: 90%;
+
+        @include atSmall {
+            font-size: 1.9rem;
+            letter-spacing: 1px;
+            line-height: 165%;
+        }
+    }
+}

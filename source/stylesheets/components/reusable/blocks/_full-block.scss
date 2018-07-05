@@ -1,0 +1,53 @@
+.full-block {
+    background-image: url("./../public/images/main-image--3840x2160.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60rem;
+    width: 100vw;
+
+    @include atSmall {
+        height: 70rem;
+    }
+
+    @include atMedium {
+        min-height: 110vh;
+    }
+
+    &__title {
+        font-weight: 900;
+        opacity: .7;
+        margin: 0 6.4rem;
+
+        @include atSmall {
+            padding-top: 5rem;
+        }
+
+        @include atMedium {
+            padding-top: 7rem;
+        }
+
+        @include atLarge {
+            padding-top: 8rem;
+        }
+    }
+
+    &__subtitle {
+        display: none;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 2px;
+        opacity: .75;
+        margin-top: .6rem;
+        text-align: center;
+
+        @include atSmall {
+            display: block;
+            font-size: 1.7rem;
+        }
+
+        @include atMedium {
+            font-size: 2rem;
+            margin-top: 1.4rem;
+        }
+    }
+}

@@ -1,0 +1,5 @@
+@mixin IE () {
+    .isIE, .isEdge {
+        @content
+    }
+}

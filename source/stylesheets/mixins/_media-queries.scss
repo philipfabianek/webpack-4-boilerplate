@@ -1,0 +1,35 @@
+@mixin atSmall {
+    @media all and (min-width: 550px) {
+        @content;
+    }
+}
+
+@mixin atMedium {
+    @media all and (min-width: 800px) {
+        @content;
+    }
+}
+
+@mixin atLarge {
+    @media all and (min-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin atVeryLarge {
+    @media all and (min-width: 1560px) {
+        @content;
+    }
+}
+
+@mixin at1920 {
+    @media all and (min-width: 1860px) {
+        @content;
+    }
+}
+
+@mixin atMoreThan1920 {
+    @media all and (min-width: 1920px) {
+        @content;
+    }
+}

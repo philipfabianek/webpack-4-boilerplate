@@ -1,0 +1,39 @@
+@mixin non-visible () {
+    opacity: 0;
+    visibility: hidden;
+
+    @content;
+}
+
+@mixin visible () {
+    opacity: 1;
+    visibility: visible;
+
+    @content;
+}
+
+@mixin menu-line () {
+    background-color: $start-icon-color;
+    height: .2rem;
+    left: 0;
+    position: absolute;
+    width: 4rem;
+
+    @include atMedium {
+        height: .3rem
+    }
+
+    @content;
+}
+
+@mixin line-height ($font-size) {
+    line-height: calc(#{$font-size} + .6rem);
+}
+
+@mixin css-center-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    z-index: -1;
+}

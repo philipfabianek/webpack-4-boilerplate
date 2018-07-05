@@ -1,0 +1,54 @@
+.page {
+    &__title {
+        color: $landing-page-title;
+        font-family: "Lato", sans-serif;
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        margin: 0 2rem;
+        padding-top: 5rem;
+        text-align: center;
+
+        @include atSmall {
+            font-size: 4.2rem;
+            letter-spacing: 2.5px;
+            padding-top: 5.4rem;
+        }
+
+        @include atMedium {
+            font-size: 5.2rem;
+            letter-spacing: 3.5px;
+            padding-top: 6rem;
+        }
+
+        @include atLarge{
+            font-size: 5.8rem;
+            padding-top: 6.4rem;
+        }
+    }
+
+    &__copyright {
+        color: $white;
+        font-family: Roboto, sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 145%;
+        margin: 0 15vw;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+        max-width: 70vw;
+
+        bottom: 2rem;
+        position: absolute;
+
+        @include atSmall {
+            bottom: 2.4rem;
+        }
+
+        @include atMedium {
+            bottom: 2.8rem;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.order-block {
+    background-image: url("./../public/images/order--3840x2160.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 85vh;
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+
+        h2 {
+            color: $white;
+            font-family: "Lato", sans-serif;
+            font-size: 3.4rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            line-height: 130%;
+            margin: 0 3.6rem;
+            text-transform: uppercase;
+
+            @include atSmall {
+                font-size: 5rem;
+                letter-spacing: 5px;
+            }
+
+            @include atMedium {
+                font-size: 6rem;
+                letter-spacing: 6px;
+            }
+
+            @include atLarge {
+                letter-spacing: 8px;
+            }
+        }
+
+        a {
+            background-color: $white;
+            border: none;
+            border-radius: 3.5rem;
+            color: #555;
+            display: inline-block;
+            font-family: "Lato", sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            height: 7rem;
+            letter-spacing: 1px;
+            line-height: 7rem;
+            margin-top: 3rem;
+            transition: background-color .5s ease, border-color .5s ease;
+            width: 14rem;
+
+            @include atSmall {
+                width: 16rem;
+            }
+
+            @include atMedium {
+                margin-top: 3.6rem;
+            }
+
+            &:hover, &:active {
+                background-color: #ccc;
+            }
+        }
+    }
+}

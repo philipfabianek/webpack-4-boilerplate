@@ -1,0 +1,70 @@
+.footer {
+    padding: 5rem 0 6rem 0;
+    text-align: center;
+
+    @include atSmall {
+        padding: 6rem 0;
+    }
+
+    @include atMedium {
+        padding: 8rem 0 6rem 0;
+    }
+
+    &__link {
+        color: $black;
+        cursor: pointer;
+        display: block;
+        font-family: "Raleway", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin: 0 1rem;
+        margin-top: 1.4rem;
+        opacity: .85;
+        padding: .6rem 0;
+        text-transform: uppercase;
+        transition: opacity .4s ease;
+
+        @include atMedium {
+            display: inline-block;
+            margin: 0 1rem;
+            padding: .5rem 1rem;
+        }
+
+        &:hover, &:active {
+            opacity: 1;
+        }
+    }
+
+    &__copyright {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        line-height: 180%;
+        margin-top: 5rem;
+        opacity: .95;
+        padding: 0 1.6rem;
+        text-transform: uppercase;
+    }
+
+    &__developer {
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        line-height: 180%;
+        margin-top: .4rem;
+        opacity: .95;
+        padding: 0 3rem;
+        text-transform: uppercase;
+
+        @include atSmall {
+            margin-top: 0;
+        }
+
+        a {
+            color: #901010;
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+        }
+    }
+}

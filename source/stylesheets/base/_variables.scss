@@ -1,0 +1,31 @@
+/////////////////////////////////////////////////
+// Base Specific Styles
+
+// Colors
+$white: #ffffff;
+$grey: #333333;
+$black: #000000;
+$light-white: #f9f9f9;
+
+// Body
+$body-default-text-color: $black;
+$body-default-background: #f9f9f9;
+$body-default-font-family: Raleway, sans-serif;
+
+// Spacing
+$space: 1.4rem;
+$large-space: 2.8rem;
+
+// Font sizes
+$base-font-size: 2.4rem;
+
+/////////////////////////////////////////////////
+// Reusable Component Specific Styles
+
+$wrapper-max-width: 80rem;
+
+/////////////////////////////////////////////////
+// Landing Page
+
+$main-color: #f1f1f1;
+$landing-page-title: $black;

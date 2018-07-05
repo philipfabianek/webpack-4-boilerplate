@@ -1,0 +1,61 @@
+.block--side {
+    & {
+
+    }
+
+    &__content {
+        margin: 0 auto;
+        margin-top: 5rem;
+        width: 90%;
+        max-width: 100rem;
+
+        @include atSmall {
+            margin-top: 5.6rem;
+        }
+
+        @include atMedium {
+            margin-top: 4rem;
+        }
+
+        @include atLarge {
+            margin-top: 4.6rem;
+        }
+    }
+
+    &__left, &__right {
+        img {
+            width: 100%;
+            max-width: 30rem;
+        }
+
+        @include atMedium {
+            display: inline-block;
+            vertical-align: top;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &__left {
+        margin-top: 3rem;
+
+        @include atSmall {
+            margin-top: 4.4rem;
+        }
+
+        @include atMedium {
+            float: left;
+            margin-top: 0;
+            width: 34%;
+        }
+    }
+
+    &__right {
+        @include atMedium {
+            margin-left: 3%;
+            width: 63%;
+        }
+    }
+}

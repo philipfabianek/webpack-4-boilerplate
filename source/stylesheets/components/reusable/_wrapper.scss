@@ -1,0 +1,16 @@
+.wrapper {
+    margin: 0 auto;
+    max-width: $wrapper-max-width;
+
+    @include atSmall {
+        text-align: justify;
+    }
+
+    // &--page {
+    //     align-items: center;
+    //     display: flex;
+    //     flex-direction: column;
+    //     max-width: $page-max-width;
+    //     text-align: justify;
+    // }
+}

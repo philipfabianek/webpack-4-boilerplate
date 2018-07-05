@@ -1,0 +1,21 @@
+.block--dark {
+    background-image: url("./../public/images/dark--3840x2160.jpg");
+    background-position: center;
+    background-size: cover;
+
+    .block__title {
+        color: $white;
+
+        &:before {
+            background-color: $white;
+        }
+    }
+
+    * {
+        color: $white;
+    }
+
+    h2:before {
+        background-color: $white;
+    }
+}

@@ -1,0 +1,184 @@
+.block {
+    & {
+        padding: 5.6rem 0;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        width: 100vw;
+
+        @include atSmall {
+            padding: 7.4rem 0;
+        }
+
+        @include atMedium {
+            padding: 8rem 0;
+        }
+
+        @include atLarge {
+            padding: 10rem 0;
+        }
+    }
+
+    &--light-grey {
+        background-color: #e2e2e2;
+    }
+
+    &--only {
+        padding: 0;
+        position: relative;
+        text-align: center;
+        width: 100vw;
+
+        @include atSmall {
+            padding: 2.4rem 0 1rem;
+        }
+
+        @include atMedium {
+            padding: 3rem 0;
+        }
+
+        @include atLarge {
+            padding: 3.4rem 0;
+        }
+    }
+
+    &--top {
+        padding-top: 0;
+
+        @include atSmall {
+            padding-top: 2.4rem;
+        }
+
+        @include atMedium {
+            padding-top: 3rem;
+        }
+
+        @include atLarge {
+            padding-top: 3.4rem;
+        }
+    }
+
+    &--white {
+        background-color: #f1f1f1;
+    }
+
+    &--light {
+        background-color: #e6e6e6;
+    }
+
+    &__title {
+        font-family: "Lato", sans-serif;
+        font-size: 2.6rem;
+        letter-spacing: 1px;
+        margin: 0 2rem;
+        position: relative;
+        text-align: center;
+
+        @include atSmall {
+            font-size: 3rem;
+            letter-spacing: 1.5px;
+        }
+
+        @include atMedium {
+            font-size: 3.4rem;
+            letter-spacing: 2px;
+        }
+
+        &:before {
+            background-color: $black;
+            bottom: -2.2rem;
+            content: "";
+            height: .2rem;
+            left: 50%;
+            position: absolute;
+            transform: translateX(-50%);
+            width: 4rem;
+
+            @include atSmall {
+                width: 5.6rem;
+            }
+
+            @include atMedium {
+                width: 7rem;
+            }
+        }
+    }
+
+    &__description {
+        font-family: "Lato", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 400;
+        letter-spacing: .5px;
+        line-height: 150%;
+        margin: 0 auto;
+        margin-top: 5.4rem;
+        text-align: left;
+        width: 90%;
+        max-width: 80rem;
+
+        @include atSmall {
+            font-size: 1.9rem;
+            line-height: 165%;
+            margin-top: 6rem;
+            text-align: center;
+        }
+    }
+
+    &__one-image {
+        display: block;
+        height: 30rem;
+        margin-left: 50vw;
+        margin-top: 4rem;
+        max-width: 95rem;
+        transform: translateX(-50%);
+
+        @include atSmall {
+            margin-top: 5rem;
+            height: auto;
+        }
+    }
+
+    &__two-images {
+        margin: 0 auto;
+        padding-top: 1rem;
+        // width: 90%;
+        max-width: 120rem;
+
+        @include atSmall {
+            padding-top: 2.4rem;
+            width: 90%;
+        }
+
+        @include atMedium {
+            margin-top: 6rem;
+            padding-top: 0;
+        }
+
+        img {
+            display: block;
+            margin-top: 3rem;
+            width: 100%;
+
+            @include atSmall {
+                margin-top: 3rem;
+            }
+
+            @include atMedium {
+                display: inline-block;
+                margin: 0 2.5%;
+                width: 45%;
+            }
+        }
+    }
+
+    &__rows {
+        margin: 0 auto;
+        margin-top: 5.4rem;
+        width: 90%;
+        max-width: 110rem;
+
+        @include atSmall {
+            margin-top: 6rem;
+        }
+    }
+}

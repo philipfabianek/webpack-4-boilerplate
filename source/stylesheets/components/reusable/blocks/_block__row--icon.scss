@@ -1,0 +1,51 @@
+.block__row--icon {
+    img {
+        margin-left: 3%;
+        width: 20%;
+        max-width: 6rem;
+
+        @include atSmall {
+            display: inline-block;
+            float: left;
+            margin-left: 0;
+            width: 15%;
+            max-width: 9rem;
+        }
+
+        @include atMedium {
+            width: 9%;
+        }
+    }
+
+    h2 {
+        display: inline-block;
+        margin-left: 5%;
+        vertical-align: top;
+        width: 72%;
+    }
+
+    p {
+        margin-top: 1rem;
+
+        @include atSmall {
+            margin-top: 4rem;
+        }
+    }
+
+    h2, p {
+        @include atSmall {
+            display: inline-block;
+            margin-left: 4%;
+            width: 81%;
+        }
+
+        @include atMedium {
+            width: 87%;
+        }
+
+        @include atLarge {
+            margin-left: 3%;
+            width: 88%;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: auto;
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 62.5%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $body-default-font-family;
+    font-size: $base-font-size;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    -ms-text-size-adjust: 100%;
+    word-wrap: break-word;
+}
+
+div, li, ul, ol, p, h1, h2, h3, h4, h5 {
+    color: $body-default-text-color;
+    cursor: default;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+input, form {
+    color: $body-default-text-color;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+input[type=text], input[type=email], input[type=password], textarea {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: $body-default-text-color;
+    cursor: text;
+    font-family: $body-default-font-family;
+}
+
+button {
+    cursor: pointer;
+    font-family: $body-default-font-family;
+    outline: none;
+}
+
+.display-none {
+    display: none;
+    user-select: auto;
+}
