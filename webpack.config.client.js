@@ -77,11 +77,11 @@ module.exports = (env) => {
             new webpack.DefinePlugin({
                 'process.env.NODE_ENV': JSON.stringify('development')
             })
-        ],
-        optimization: {
-            splitChunks: {
-                chunks: 'all'
-            }
-        }
+        ]
+        // optimization: {
+        //     splitChunks: {
+        //         chunks: 'all'
+        //     }
+        // }
     };
 }
