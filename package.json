@@ -5,6 +5,7 @@
     "scripts": {
         "webpack:source": "webpack --watch --mode=development --config webpack.config.client.js",
         "webpack:server": "webpack --watch --mode=development --config webpack.config.server.js",
+        "webpack": "npm-run-all --parallel webpack:source webpack:server",
         "nodemon": "nodemon server/server-webpack.js",
         "dev": "npm-run-all --parallel webpack:source webpack:server nodemon",
         "webpack:prod": "webpack -p --env production --mode=production --config webpack.config.client.js && webpack -p --env production --mode=production --config webpack.config.server.js",
